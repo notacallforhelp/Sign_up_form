@@ -1,0 +1,218 @@
+:root {
+    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--system-ui);
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  @font-face {
+    font-family: 'NorseBold';
+    src: url('./fonts/norse-bold-webfont.woff') format('woff'),
+    url('./fonts/norse-bold-webfont.woff2') format('woff2');
+  }
+
+  .outerwrapper{
+    display: flex;
+    width: 100vw;
+    border: 0px solid green;
+    height: 100vh;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .left,.right{
+    height: 100%;
+  }
+
+  .left{
+    /*border: 1px solid red;*/
+    width: 30%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .outerimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .sidebar{
+    position: absolute;
+    border: solid red 0px;
+    width: 100%;
+    height: 20%;
+    top: 20%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'NorseBold',sans-serif;
+    font-size: 108px;
+  }
+
+  .footer{
+    position: absolute;
+    width: 100%;
+    border: solid white 0px;
+    height: 4%;
+    color: white;
+    bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+  }
+
+  .footer a{
+    color: white;
+    margin:0 1ch;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+
+  .sidebarimg{
+    height: 75%;
+  }
+
+  .right{
+    border: 0px solid blue;
+    height: 100%;
+    width: 50%;
+    flex:none;
+  }
+
+  .A{
+    width: 100%;
+    height: 35%;
+    border: 0px solid pink;
+    padding-left: 5%;
+    padding-right: 25%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: 550;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9fafb;
+  }
+
+  .B{
+    width: 100%;
+    height: 30%;
+    border: 0px solid green;
+    border-radius: 0px;
+    background-color: white;
+    /*padding-left: 5%;
+    padding-top: 16px;*/
+    padding: 14px 5%;
+    border-radius: 2px;
+  }
+
+  .heading{
+    font-weight: 550;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 8px;
+  }
+
+  .B form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0px 0 0px 0;
+  }
+
+  form .user-details .input-box{
+    
+    width: calc(100%/2 - 100px);
+    border: 0px solid red;
+    margin-bottom: 16px;
+  }
+
+  .user-details .input-box .details{
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0px;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+  }
+
+  .user-details .input-box input{
+    height: 30px;
+    width: 80%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+
+  .C{
+    width: 100%;
+    height: 35%;
+    border: 0px solid brown;
+    background-color:#f9fafb;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    padding: 3% 5%;
+  }
+
+  button{
+    background-color: #596D48;
+    color: white;
+    padding: 10px 32px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    border-color: white;
+    font-weight: bold;
+  }
+
+  input:focus{
+    border: 1px solid blue !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px !important;
+  }
+  input[type='password']:not(:placeholder-shown):invalid{
+    border: 1px solid red;
+  }
+  input[type='password']:not(:placeholder-shown):valid{
+    border: 1px solid green;
+  }
+
+  a{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+  }

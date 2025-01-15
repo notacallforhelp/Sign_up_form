@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outerwrapper">
+        <div class="left">
+            <img class="outerimg" src="./images/bg2.jpg" alt="an aesthetically pleasing image of mother earth">
+            <div class="sidebar">
+                <img class="sidebarimg" src="./images/bg3.png" alt="">
+                ODIN
+            </div>
+            <div class="footer">
+                Photo by <a target="_blank" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"> Halie West </a> on <a target="_blank" href="https://unsplash.com/">Unsplash</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="A">
+                <p>This is not a real online service! You know you need something like this in your
+                life to help you realize your deepest dreams.</p>
+                <p>Sign up now to get started.</p>
+                <br>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="B">
+                <p class="heading">Let's do this!</p>
+
+                <form id="details" action="" method="get">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <label for="FirstName"><span class="details">FIRST NAME</span></label>
+                            <input type="text" id="FirstName" name="FirstName" placeholder="Shamirul" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="LastName"><span class="details">LAST NAME</span></label>
+                            <input type="text" id="FirstName" name="LastName" placeholder="Huda" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="Email"><span class="details">EMAIL</span></label>
+                            <input type="email" id="Email" name="Email" placeholder="abcxyz@gmail.com" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="PhoneNumber"><span class="details">PHONE NUMBER</span></label>
+                            <input type="tel" id="PhoneNumber" placeholder="+913657365736" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="Password"><span class="details">PASSWORD</span></label>
+                            <input type="password" id="Password" placeholder="********" required minlength="8">
+                        </div>
+                        <div class="input-box">
+                            <label for="ConfirmPassword"><span class="details">CONFIRM PASSWORD</span></label>
+                            <input type="password" id="ConfirmPassword" placeholder="********" required minlength="8">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="C">
+                <button type="submit" form="details">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
